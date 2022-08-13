@@ -1,0 +1,38 @@
+.grande{
+    background-color: green;
+    width: 300px;
+    height: 300px;
+}
+
+.peque{
+    background-color: salmon;
+    width: 50%;
+    height: 50%;
+    /*transition: transform 1s;*/
+    
+}
+
+.grande:hover .peque{
+    /*transform: translate(100%);
+    background-color: blueviolet;*/
+    animation: traslacion 2s infinite forwards alternate;
+}
+@keyframes traslacion {
+    0%{
+        background-color: aqua;
+        transform: translatex(0%);
+    }
+    25%{
+        transform: translatex(100%) ;
+    }
+    50%{
+        transform: translatex(100%) translateY(100%);
+    }
+    75%{
+        transform: translateX(0%) translateY(100%);
+    }
+    100%{
+        background-color: chartreuse;
+        transform: translatex(0%);
+    }
+}
